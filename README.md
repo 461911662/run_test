@@ -10,4 +10,4 @@ plat_camera: version 0.1
 Options: 
 	clean: clean the project cache. 
 	install: install exec bins,depond libs and include files etc. 
-	uninstall: remove this project from the system. 
+	uninstall: remove this project from the system.
