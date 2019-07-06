@@ -21,7 +21,7 @@ sleep 10
 EOF
 chmod a+x /root/laplat_camera/exec_bin/setwlan.sh
 
-grep "/root/laplat_camera/exec_bin/setwlan.sh" -Rn /etc/rc.local || sed -i "s#exit 0#\n/root/laplat_camera/exec_bin/setwlan.sh\n\nexit 0\n#g" /etc/rc.local
+grep "/root/laplat_camera/exec_bin/setwlan.sh" -Rn /etc/rc.local || sed -i "s#^exit 0#\n/root/laplat_camera/exec_bin/setwlan.sh\n\nexit 0\n#g" /etc/rc.local
 
 reboot
 
